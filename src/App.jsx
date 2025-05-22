@@ -38,15 +38,18 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<ReceptionistDashboard />} />
+          <Route path="/" element={<AppointmentPage />} />
           <Route path="/dashboard-admin" element={<PrivateRoute element={<DashboardPage />} />} />
           <Route path="/monitor-visitor-logs" element={<PrivateRoute element={<LogsPage />} />} />
           <Route path="/generate-report" element={<PrivateRoute element={<ReportPage />} />} />
           <Route path="/manageuser-admin" element={<PrivateRoute element={<ManageUser />} />} />
           <Route path="/receptionist-user" element={<PrivateRoute element={<ReceptionistDashboard />} />} />
+          <Route path="/appointment" element={<AppointmentPage />} />
         </Routes>
       </Router>
       <ToastContainer />
+      {/* External/Public Link Example (for demo, add to sidebar or homepage as needed) */}
+
     </>
   );
 }

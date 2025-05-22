@@ -44,7 +44,7 @@ export default function AddAppointmentModal({ isOpen, onClose }) {
             time: form.time,
         };
         try {
-            const res = await fetch("http://localhost:8000/api/visitor/", {
+            const res = await fetch("http://192.168.100.13:8000/api/visitor/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),
